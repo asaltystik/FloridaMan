@@ -8,4 +8,4 @@ func _physics_process(delta):
 	_velocity.y += gravity * delta
 	if is_on_wall():
 		_velocity.x *= -1.0
-	_velocity = move_and_slide(_velocity, ON_FLOOR)
+	_velocity = move_and_slide(_velocity, _velocity)
